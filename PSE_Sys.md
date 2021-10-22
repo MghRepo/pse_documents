@@ -1572,11 +1572,12 @@ déstructurées en données structurées.
 D'autres caractéristiques du big data sont :
 
 * **Exhaustivité** : Si le système dans son ensemble est capturé (enregistré) ou non. Le big data peut inclure toutes les
-données depuis les sources ou pas.  **Fin et uniquement lexical** : Respectivement, la proportion de données spécifiques de
-chaque élément par élément collecté et si l'élément et ses caractéristiques sont correctement indexés ou identifiés.
+données depuis les sources ou pas.
+* **Fin et uniquement lexical** : Respectivement, la proportion de données spécifiques de chaque élément par élément collecté et
+si l'élément et ses caractéristiques sont correctement indexés ou identifiés.
 * **Relationnel** : Si la donnée collectée contient des champs communs qui pourrait permettre une intersection, ou méta-analyse,
-de différents ensembles de données.  **Extensible** : Si de nouveaux champs dans chaque élément de la donnée collectée peuvent
-être ajoutés ou changés facilement.
+de différents ensembles de données.
+* **Extensible** : Si de nouveaux champs dans chaque élément de la donnée collectée peuvent être ajoutés ou changés facilement.
 * **Mise à l'échelle** : Si la taille du système de stockage big data peut rapidement s'agrandir.
 
 L'architecture du big data est généralement multi-couche. Une architecture parallèle distribuée distribue les données à travers
