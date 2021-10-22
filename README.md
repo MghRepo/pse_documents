@@ -1,7 +1,7 @@
 # Programme informatique du concours d'inspecteur PSE
 
 Ceci est une compilation de mes notes pour le concours d'inspecteur PSE concernant le [programme
-informatique](https://www.economie.gouv.fr/files/directions_services/recrutement/DGFiP/recrutement-par-concours/categorie-1_licence/inspecteur-finances-publiques-PSE/programme_inspecteur_pse_interne.pdf).
+informatique](https://www.economie.gouv.fr/files/directions_services/recrutement/aide-a-preparation-concours-interne-dinspecteur-programmeur-systeme-dexploitation-pse-de).
 J'ai séparé les différentes grandes parties du programme en quatre documents. Ceux-ci peuvent être lus indépendamment les uns
 des autres néanmoins l'ordre de lecture conseillé serait :
 
