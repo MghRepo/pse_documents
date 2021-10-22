@@ -1347,7 +1347,7 @@ lien avec une commande SQL standard :
 
 |CRUD    |SQL   |
 |--------|------|
-|Cread   |INSERT|
+|Create  |INSERT|
 |Read    |SELECT|
 |Update  |UPDATE|
 |Delete  |DELETE|
@@ -1357,7 +1357,7 @@ HTTP :
 
 |CRUD    |HTTP  |
 |--------|------|
-|Cread   |PUT   |
+|Create  |PUT   |
 |Read    |GET   |
 |Update  |PUT   |
 |Delete  |DELETE|
