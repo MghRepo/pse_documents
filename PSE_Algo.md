@@ -35,7 +35,7 @@ inter-applicatifs) des spécifications SOAP, REST et de leurs évolutions récen
     + [Table de hachage](#table-de-hachage)
 * [Algorithmes de chiffrements](#algorithmes-de-chiffrements)
     + [Chiffrement symétrique AES](#chiffrement-symétrique-aes)
-    + [Chiffrement assymétrique RSA](#chiffrement-assymétrique-rsa)
+    + [Chiffrement asymétrique RSA](#chiffrement-asymétrique-rsa)
 * [Programmation orientée objet](#programmation-orientée-objet)
 * [Compilation](#compilation)
 * [API](#api)
