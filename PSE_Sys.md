@@ -58,7 +58,7 @@ légère pour deux sujets aussi larges.
         - [OpenSSH](#openssh)
         - [Netfilter](#netfilter)
         - [Contrôle d'accès discrétionnaire et droits](#contrôle-daccès-discrétionnaire-et-droits)
-        - [Listes de contrôle d'accès](#listes-de-contrôle-daccès)
+        - [Listes de contrôle d'accès ACL](#listes-de-contrôle-daccès-ACL)
         - [SELinux](#seLinux)
     + [Virtualisation et conteneurisation](#virtualisation-et-conteneurisation)
         - [Systemd-nspawn](#systemd-nspawn)
@@ -1019,7 +1019,7 @@ D'autres droits existent notamment le sticky bit principalement utilisé sur les
 suppression du répertoire par d'autres utilisateurs bien qu'ils puissent avoir des droits en écriture sur le contenu de ce même
 répertoire.
 
-#### Listes de contrôle d'accès
+#### Listes de contrôle d'accès ACL
 
 Les listes de contrôle d'accès sont une extension du contrôle d'accès discrétionnaire et des droits usuels.
 
