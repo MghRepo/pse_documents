@@ -1517,7 +1517,9 @@ PostgreSQL peut se connecter à d'autres systèmes pour récupérer des données
 
 Pour se connecter à des applications, PostgreSQL inclus l'interface libpq (l'interface d'applications C officielle) et ECPG (un système C embarqué). Des bibliothèques tierces pour se connecter à PostgreSQL sont disponnibles pour de nombreux langages de programmation.
 
-Des langages procéduraux permettent aux développeurs d'étendre la base de donnée à l'aide de fonctions personnalisées, souvent appelées **procédures stockées**.
+Des langages procéduraux permettent aux développeurs d'étendre la base de donnée à l'aide de fonctions personnalisées, souvent appelées **procédures stockées**. Ces fonctions peuvent être utilisées pour construire des déclencheurs de base de données (fonctions invoquées suite à la modification d'une donnée particulière), des types de données personnalisés et des fonctions d'agrégations. Des langages procéduraux peuvent également être invoqués sans définir de fonction en utilisant une commande DO au niveau du SQL.
+
+Les langages sont divisés en deux groupes : les procédures écrites en langage sûr sont exécutées dans des bacs à sable et peuvent être créées et utilisées par n'importe quel utilisateur. Les procédure écrites en langage non sûr sont uniquement créées par des superutilisateurs, du fait qu'elles permettent un court circuit des restrictions de sécurité de la base de données, mais également d'accéder à des ressources externe à la base de données. Quelques langages tel que Perl fournissent des versions sûre et non sûres.
 <TODO>
 
 #### Sécurité
