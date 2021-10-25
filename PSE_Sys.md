@@ -1513,27 +1513,53 @@ relations entités (ERDs) directement dans la base de données PostgreSQL.
 
 #### Contrôle et connectivité
 
-PostgreSQL peut se connecter à d'autres systèmes pour récupérer des données via des encapsulateurs de données étrangères (FDWs). Ils peuvent prendre la forme de n'importe quelle source de données, telle qu'un système de fichier, un autre SGBDR, ou un service web. Cela signifie que des requêtes classiques de base de données peuvent utiliser ces sources de données comme des tables, et même joindre ensemble plusieurs sources de données.
+PostgreSQL peut se connecter à d'autres systèmes pour récupérer des données via des encapsulateurs de données étrangères (FDWs).
+Ils peuvent prendre la forme de n'importe quelle source de données, telle qu'un système de fichier, un autre SGBDR, ou un
+service web. Cela signifie que des requêtes classiques de base de données peuvent utiliser ces sources de données comme des
+tables, et même joindre ensemble plusieurs sources de données.
 
-Pour se connecter à des applications, PostgreSQL inclus l'interface libpq (l'interface d'applications C officielle) et ECPG (un système C embarqué). Des bibliothèques tierces pour se connecter à PostgreSQL sont disponnibles pour de nombreux langages de programmation.
+Pour se connecter à des applications, PostgreSQL inclus l'interface libpq (l'interface d'applications C officielle) et ECPG (un
+système C embarqué). Des bibliothèques tierces pour se connecter à PostgreSQL sont disponnibles pour de nombreux langages de
+programmation.
 
-Des langages procéduraux permettent aux développeurs d'étendre la base de donnée à l'aide de fonctions personnalisées, souvent appelées **procédures stockées**. Ces fonctions peuvent être utilisées pour construire des déclencheurs de base de données (fonctions invoquées suite à la modification d'une donnée particulière), des types de données personnalisés et des fonctions d'agrégations. Des langages procéduraux peuvent également être invoqués sans définir de fonction en utilisant une commande DO au niveau du SQL.
+Des langages procéduraux permettent aux développeurs d'étendre la base de donnée à l'aide de fonctions personnalisées, souvent
+appelées **procédures stockées**. Ces fonctions peuvent être utilisées pour construire des déclencheurs de base de données
+(fonctions invoquées suite à la modification d'une donnée particulière), des types de données personnalisés et des fonctions
+d'agrégations. Des langages procéduraux peuvent également être invoqués sans définir de fonction en utilisant une commande DO au
+niveau du SQL.
 
-Les langages sont divisés en deux groupes : les procédures écrites en langage sûr sont exécutées dans des bacs à sable et peuvent être créées et utilisées par n'importe quel utilisateur. Les procédure écrites en langage non sûr sont uniquement créées par des superutilisateurs, du fait qu'elles permettent un court circuit des restrictions de sécurité de la base de données, mais également d'accéder à des ressources externe à la base de données. Quelques langages tel que Perl fournissent à la fois des versions sûre et non sûres.
+Les langages sont divisés en deux groupes : les procédures écrites en langage sûr sont exécutées dans des bacs à sable et
+peuvent être créées et utilisées par n'importe quel utilisateur. Les procédure écrites en langage non sûr sont uniquement créées
+par des superutilisateurs, du fait qu'elles permettent un court circuit des restrictions de sécurité de la base de données, mais
+également d'accéder à des ressources externe à la base de données. Quelques langages tel que Perl fournissent à la fois des
+versions sûre et non sûres.
 
 PostgreSQL fournit un support pour trois langages procéduraux :
 
-* SQL (sûr). Des fonctions SQL plus simple peuvent être étendues dans une requête appelante, qui sauve une fonction appelée compartiment et permet à l'optimiseur de requête de "voir à l'intérieur" de la fonction.
-* Langage procédural PostgreSQL (PL/pgSQL)(sûr), qui ressemble au langage procédural Oracle pour langage procédural SQL (PL/SQL) et les modules stockés persistants SQL (SQL/PSM).
-* C (non sûr), qui permet de charger une ou plusieurs bibliothèques partagées personnalisées en base de données. Les fonctions écrites en C offrent une meilleure performance, mais un bogue dans le code peut faire tomber et corrompre la base de données. La plupart des fonctions incluses sont écrites en C.
+* SQL (sûr). Des fonctions SQL plus simple peuvent être étendues dans une requête appelante, qui sauve une fonction appelée
+compartiment et permet à l'optimiseur de requête de "voir à l'intérieur" de la fonction.  Langage procédural PostgreSQL
+(PL/pgSQL)(sûr), qui ressemble au langage procédural Oracle pour langage procédural SQL (PL/SQL) et les modules stockés
+persistants SQL (SQL/PSM).
+* C (non sûr), qui permet de charger une ou plusieurs bibliothèques partagées personnalisées en base de données. Les fonctions
+écrites en C offrent une meilleure performance, mais un bogue dans le code peut faire tomber et corrompre la base de données.
+La plupart des fonctions incluses sont écrites en C.
 
-De plus, PostgreSQL permet aux langages procéduraux d'être chargés en base de données à l'aide d'extensions. Trois extensions sont incluses dans PostgreSQL pour Perl, Tcl et Python.
+De plus, PostgreSQL permet aux langages procéduraux d'être chargés en base de données à l'aide d'extensions. Trois extensions
+sont incluses dans PostgreSQL pour Perl, Tcl et Python.
 
-Des déclencheurs sont des évenements déclenchés par l'action de déclarations de langage de manipulation de données SQL (DML). La plupart des déclencheurs sont activés uniquement pour des déclarations INSERT ou UPDATE.
+Des déclencheurs sont des évenements déclenchés par l'action de déclarations de langage de manipulation de données SQL (DML). La
+plupart des déclencheurs sont activés uniquement pour des déclarations INSERT ou UPDATE.
 
-Les déclencheurs peuvent être liés à des tables. Ils peuvent être par colonnes et conditionnels, les déclencheurs UPDATE peuvent cibler les colonnes spécifiques d'une table, et les déclencheurs peuvent être exécutés selon un ensemble de conditions spécifiés par une clause WHERE. Les déclencheurs peuvent être liés à des vues en utilisant la condition INSTEAD OF. De multiples déclencheurs sont traités par ordre alphabétique. En plus d'appeler des fonctions écrites en PL/pgSQL natif, les déclencheurs peuvent également invoquer des fonctions écrites dans d'autres langages PL/Python ou PL/Perl.
+Les déclencheurs peuvent être liés à des tables. Ils peuvent être par colonnes et conditionnels, les déclencheurs UPDATE peuvent
+cibler les colonnes spécifiques d'une table, et les déclencheurs peuvent être exécutés selon un ensemble de conditions spécifiés
+par une clause WHERE. Les déclencheurs peuvent être liés à des vues en utilisant la condition INSTEAD OF. De multiples
+déclencheurs sont traités par ordre alphabétique. En plus d'appeler des fonctions écrites en PL/pgSQL natif, les déclencheurs
+peuvent également invoquer des fonctions écrites dans d'autres langages PL/Python ou PL/Perl.
 
-PostgreSQL fournit un système de messagerie asynchrone qui peut être accédé à travers les commandes NOTIFY, LISTEN et UNLISTEN. Une session peut émettre une commande NOTIFY, avec un cannal spécifique à un utilisateur et une charge optionnelle, pour marquer l'occurence d'un évenement en particulier.
+PostgreSQL fournit un système de messagerie asynchrone qui peut être accédé à travers les commandes NOTIFY, LISTEN et UNLISTEN.
+Une session peut émettre une commande NOTIFY, avec un cannal spécifique à un utilisateur et une charge optionnelle, pour marquer
+l'occurence d'un évenement en particulier.
+
 <TODO>
 
 #### Sécurité
