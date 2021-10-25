@@ -1513,6 +1513,11 @@ relations entités (ERDs) directement dans la base de données PostgreSQL.
 
 #### Contrôle et connectivité
 
+PostgreSQL peut se connecter à d'autres systèmes pour récupérer des données via des encapsulateurs de données étrangères (FDWs). Ils peuvent prendre la forme de n'importe quelle source de données, telle qu'un système de fichier, un autre SGBDR, ou un service web. Cela signifie que des requêtes classiques de base de données peuvent utiliser ces sources de données comme des tables, et même joindre ensemble plusieurs sources de données.
+
+Pour se connecter à des applications, PostgreSQL inclus l'interface libpq (l'interface d'applications C officielle) et ECPG (un système C embarqué). Des bibliothèques tierces pour se connecter à PostgreSQL sont disponnibles pour de nombreux langages de programmation.
+
+Des langages procéduraux permettent aux développeurs d'étendre la base de donnée à l'aide de fonctions personnalisées, souvent appelées **procédures stockées**.
 <TODO>
 
 #### Sécurité
@@ -1527,7 +1532,7 @@ contrôle d'accès obligatoire d'étiquettes (MAC) basé sur la politique de sé
 
 PostgreSQL supporte nativement un large panel de mécanismes externes d'authentification, tels que :
 
-* Mot de passe : soit SCRAM-SHA-256, soit MD5 soit en clair
+* Mot de passe : soit SCRAM-SHA-256, soit MD5, soit en clair
 * GSSAPI
 * SSPI
 * Kerberos
