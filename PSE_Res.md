@@ -470,6 +470,10 @@ HTML/CSS
 #### Jenkins
 
 <TODO>
+    
+#### Cobbler
+
+<TODO>
 
 #### Puppet
 
