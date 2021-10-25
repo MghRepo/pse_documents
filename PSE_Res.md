@@ -31,6 +31,7 @@ Cet exposé traite des parties réseau et logiciels du programme PSE.
     + [Construction et automatisation](#construction-et-automatisation)
         - [Maven](#maven)
         - [Jenkins](#jenkins)
+        - [Cobbler](#cobbler)
         - [Puppet](#puppet)
         - [Ansible](#ansible)
     + [Métrologie et supervision Nagios](#métrologie-et-supervision-nagios)
