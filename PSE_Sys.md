@@ -996,7 +996,7 @@ de règle.
 
 Le contrôle d'accès discrétionnaire (DAC) est un moyen de limiter l'accès aux objets basés sur l'identité des sujets ou des
 groupes auxquels ils appartiennent. Le contrôle est discrétionnaire car un sujet avec une certaine autorisation d'accès est
-capable de transmettre cette permission à n'importe quel autre sujet (sauf restriction du contrôle d'accès mandataire).
+capable de transmettre cette permission à n'importe quel autre sujet (sauf restriction du contrôle d'accès obligatoire).
 
 Sous linux, les acteurs sont :
 
@@ -1026,13 +1026,13 @@ Les listes de contrôle d'accès sont une extension du contrôle d'accès discr�
 #### SELinux
 
 SELinux (*Security Enhanced Linux*) est un module de sécurité du noyau Linux qui fournit des politiques de sécurité de contrôle
-d'accès, dont le contrôle d'accès mandataire (MAC) en addition au contrôle d'accès discrétionnaire existant (DAC). SELinux
+d'accès, dont le contrôle d'accès obligatoire (MAC) en addition au contrôle d'accès discrétionnaire existant (DAC). SELinux
 répond fondamentalement aux questions telles que :
 
 "Est-ce que **le sujet** peut faire cette **action** à cet **objet** ?" e.g : "Est-ce qu'un serveur web peut accéder aux
 fichiers dans le répertoire home des utilisateurs ?"
 
-Un noyau Linux intégrant SELinux impose des politiques de contrôles d'accès mandataires qui confine les programmes utilisateurs
+Un noyau Linux intégrant SELinux impose des politiques de contrôles d'accès obligatoire qui confine les programmes utilisateurs
 et les services système, ainsi que les accès aux fichiers et aux ressources réseaux. Limiter les privilèges au minimum requis
 pour fonctionner réduit ou élimine les capacités de ces programmes et daemons à causer des dommages si ceux-ci sont compromis ou
 défaillants (par exemple via des dépassements de tampons ou des mauvaises configurations). Ce mécanisme de confinement
