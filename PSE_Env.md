@@ -15,6 +15,8 @@ Cet exposé traite de la partie environnement du système d'information du progr
     + [Rôle de la CNIL](#rôle-de-la-cnil)
     + [Licences](#licences)
 * [Organisation du travail](#organisation-du-travail)
+    + [Méthode agile](#méthode-agile)
+    + [Devops](#devops)
 * [Fonctions de PSE](#fonctions-de-pse)
 * [Plan de secours](#plan-de-secours)
 
@@ -50,6 +52,8 @@ individus au sein de l'Union européenne.
 Les principaux objectifs du RGPD sont d'accroître à la fois la protection des personnes concernées par un traitement de leurs
 données à caractère personnel et la responsabilisation des acteurs de ce traitement. Ces principes pourront être appliqués grâce
 à l'augmentation du pouvoir des autorités de contrôle.
+
+### L'usage de la messagerie
 
 ### Rôle de la CNIL
 
@@ -132,6 +136,12 @@ ces besoins, de modification et de redistribution de l'oeuvre et des oeuvres dé
 usages, y compris commercialement.
 * **propriétaire** : ne permet pas légalement ou techniquement, ou par quelque autre moyen que ce soit d'exercer simultanément
 les quatre libertés logicielles.
+
+## Organisation du travail
+
+### Méthode agile
+
+### Devops
 
 ## Fonctions de PSE
 
