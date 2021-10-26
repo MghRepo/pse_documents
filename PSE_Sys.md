@@ -174,7 +174,7 @@ réalisé, au plus il a des chances d'être exécuté.
 * **FIFO** : Les premiers processus ajoutés à la file seront les premières à être exécutés.
 * **Shortest job first (SJF, ou SJN-Shortest Job Next)** : Le choix se fait en fonction du temps d'exécution estimé du
 processus. Ainsi l'ordonnanceur va laisser passer en priorité le plus court des processus de la file d'attente.
-* **Completely Fair Scheduler** (CFS) : L'ordonnanceur des tâches pour le noyau Linux. Il gère l'allocation de ressource
+* **Completely Fair Scheduler (CFS)** : L'ordonnanceur des tâches pour le noyau Linux. Il gère l'allocation de ressource
 processeur pour l'exécution des processus, en maximisant l'utilisation globale CPU tout en optimisant l'interactivité. CFS
 utilise un arbre rouge-noir implémentant une chronologie des futures exécutions des tâches. En effet, l'arbre trie les processus
 selon une valeur representative du manque de ces processus en temps d'allocation du processeur, par rapport au temps qu'aurait
