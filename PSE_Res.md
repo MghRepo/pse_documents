@@ -58,6 +58,8 @@ et de la couche liaison.
 
 #### Noeuds
 
+Les noeuds d'un réseau sont les points de connexion du médium de transmission aux transmetteurs et receveurs des signaux
+électriques, optiques ou radio
 <TODO>
 
 #### Classification
