@@ -35,6 +35,8 @@ Cet exposé traite des parties réseau et logiciels du programme PSE.
         - [Cobbler](#cobbler)
         - [Puppet](#puppet)
         - [Ansible](#ansible)
+        - [Vagrant](#vagrant)
+        - [Terraform](#terraform)
     + [Métrologie et supervision Nagios](#métrologie-et-supervision-nagios)
     + [Sauvegarde](#sauvegarde)
 
@@ -473,23 +475,57 @@ HTML/CSS
 
 #### Maven
 
-<TODO>
+Maven est un outil d'automatisation de construction utilisé généralement pour les projets Java. Maven peut également être
+utiliser pour construir et gérer des projets dans d'autres langages.
+
+Maven aborde deux aspects de la construction de logiciel : comment le logiciel est construit, et ses dépendances. Contrairement
+à des outils précédents tels que Ant, il utilise des conventions pour la procédure de construction. Seules les exceptions ont
+besoin d'être spécifiées. Un fichier XML décrit le projet logiciel en cours de construction, ces dépendances sur d'autres
+modules externes et composants, l'ordre de construction, les répertoires, et plug-ins requis. Il embarque des cibles prédéfinies
+pour exécuter certaines tâches bien définies telles que la compilation de code et la construction de paquets. Maven télécharge
+dynamiquement des bibliothèques Java et des plugins Maven d'un ou plusieurs dépôts et les stocke dans un cache local. Ce cache
+local d'artefacts téléchargés peut également être mis à jour à l'aide d'artefacts créés par des projets locaux. Les dépôts
+publics peuvent également être mis à jour.
+
+Maven est construit en utilisant une architecture de plugins qui permet de faire usage de n'importe quelle application
+contrôlable via l'entrée standard.
 
 #### Jenkins
 
-<TODO>
+Jenkins est un serveur d'automatisation open source. Il aide à automatiser certaines parties du développement logiciel lié à la
+construction, le test, et le déploiement, facilitant l'intégration en continu (CI) et la livraison en continu (CD). C'est un
+système serveur qui fonctionne dans des conteneurs servlets tels que Tomcat. Il supporte des outils de contrôle de version et
+peut exécuter des projets basés sur Ant et Maven ainsi que des scripts shell arbitraires.
     
 #### Cobbler
 
-<TODO>
+Cobbler est un serveur fournisseur linux qui facilite et automatise l'installation de systèmes via le réseau de multiples
+systèmes d'exploitations informatiques depuis un point central en utilisant des services tels que DHCP, TFTP et DNS. Il peut
+être configurer pour l'environnement d'exécution pré-démarrage (PXE), réinstallations, et invités virtuels utilisant Xen, KVM ou
+VMware. Cobbler intéragit avec le programme koan pour le support de la réinstallation et de la virtualisation. koan et Cobbler
+utilisent libvirt pour s'intégrer avec différents logiciels de virtualisation.
 
 #### Puppet
 
-<TODO>
+Puppet est un outil logiciel de gestion de configuration qui inclut son propre langage de langage déclaratif pour décrire une
+configuration système. C'est une solution orienté modèle qui nécessite une connaissance limitée en programmation pour son usage.
 
 #### Ansible
 
-<TODO>
+Ansible est un outil logiciel open source de déploiement d'application, gestion de configuration et fournisseur permettant
+l'infrastructure as code (Iac). Il inclut son propre langage déclaratif pour décrire des configurations systèmes. Ansible est
+sans agent, se connectant temporairement via SSH pour faire ses opérations.
+
+#### Vagrant
+
+Vagrant est un produit logiciel open source pour construire et maintenir des environnements de développement logiciels virtuels
+portables (VirtualBox, KVM, Hyper-V, conteneurs Docker, VMware, et AWS). Il essaie de simplifier la gestion de la configuration
+de virtualisation afin d'augmenter la productivité de développement.
+
+#### Terraform
+
+Terraform est un outil logiciel open source d'infrastructure as code. Les utilisateurs définissent et fournisent
+l'infrastructure en utilisant un langage de configuration déclaratif ou du JSON.
 
 ### Métrologie et supervision Nagios
 
