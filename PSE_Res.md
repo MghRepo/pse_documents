@@ -476,7 +476,7 @@ HTML/CSS
 #### Maven
 
 Maven est un outil d'automatisation de construction utilisé généralement pour les projets Java. Maven peut également être
-utiliser pour construir et gérer des projets dans d'autres langages.
+utiliser pour construire et gérer des projets dans d'autres langages.
 
 Maven aborde deux aspects de la construction de logiciel : comment le logiciel est construit, et ses dépendances. Contrairement
 à des outils précédents tels que Ant, il utilise des conventions pour la procédure de construction. Seules les exceptions ont
@@ -501,8 +501,8 @@ peut exécuter des projets basés sur Ant et Maven ainsi que des scripts shell a
 
 Cobbler est un serveur fournisseur linux qui facilite et automatise l'installation système via le réseau de multiples systèmes
 d'exploitations informatiques depuis un point central en utilisant des services tels que DHCP, TFTP et DNS. Il peut
-être configurer pour l'environnement d'exécution pré-démarrage (PXE), réinstallations, et invités virtuels utilisant Xen, KVM ou
-VMware. Cobbler intéragit avec le programme koan pour le support de la réinstallation et de la virtualisation. koan et Cobbler
+être configuré pour l'environnement d'exécution pré-démarrage (PXE), réinstallations, et invités virtuels utilisant Xen, KVM ou
+VMware. Cobbler interagit avec le programme koan pour le support de la réinstallation et de la virtualisation. koan et Cobbler
 utilisent libvirt pour s'intégrer avec différents logiciels de virtualisation.
 
 #### Puppet
@@ -524,12 +524,14 @@ de virtualisation afin d'augmenter la productivité de développement.
 
 #### Terraform
 
-Terraform est un outil logiciel open source d'infrastructure as code. Les utilisateurs définissent et fournisent
+Terraform est un outil logiciel open source d'infrastructure as code. Les utilisateurs définissent et fournissent
 l'infrastructure en utilisant un langage de configuration déclaratif ou du JSON.
 
 ### Métrologie et supervision Nagios
 
-<TODO>
+Nagios Core est une application informatique open source qui supervise des systèmes, réseaux et infrastructure.
+Nagios offre des services de supervision et d'alerte pour des serveurs, switch, applications et services. Il alerte les
+utilisateurs quand les choses se passent mal et les alerte une seconde fois lorsque le problème a été résolu.
 
 ### Sauvegarde
 
