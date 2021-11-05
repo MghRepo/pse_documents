@@ -8,7 +8,9 @@ Cet exposé traite des parties réseau et logiciels du programme PSE.
 
 * [Réseau](#réseau)
     + [Topologie de réseau](#topologie-de-réseau)
-    + [Interfaces](#interfaces)
+        - [Liens](#liens)
+        - [Noeuds](#noeuds)
+        - [Classification](#classification)
     + [VLAN](#vlan)
     + [Réseautage](#réseautage)
     + [VPN](#vpn)
@@ -54,6 +56,8 @@ entre noeuds, les interconnexions physiques, les taux de transmission, ou les ty
 différents, néanmoins leurs topologies peuvent être identiques. La topologie physique d'un réseau est un problème particulier à
 la couche physique du modèle OSI.
 
+#### Liens
+
 Le médium de transmission utilisé pour relier des appareils afin de créer un réseau informatique inclut des cables électriques,
 fibres optiques et ondes radios sont appelés **liens**. Dans le modèle OSI, ceux-ci sont définis au niveau de la couche physique
 et de la couche liaison.
@@ -61,28 +65,41 @@ et de la couche liaison.
 #### Noeuds
 
 Les noeuds d'un réseau sont les points de connexion du médium de transmission aux transmetteurs et receveurs des signaux
-électriques, optiques ou radio
-<TODO>
+électriques, optiques ou radio. Ils peuvent être :
+
+* Interfaces réseau : Un contrôleur d'interface réseau (NIC) est un matériel fournissant à un ordinateur la capacité d'accéder
+au média de transmission. Il a la capacité de traiter des informations réseaux de bas niveau. Le NIC répond au traffic qui lui
+est adressé via une adresse réseau.
+* Répéteurs et concentrateurs
+* Commutateurs : Transmet et filtre les datagrammes de la couche lien(2) du modèle OSI.
+* Routeurs : Transmet et filtre les paquets entre réseaux en traitant l'information de routage inclue dans le datagramme de la
+couche réseau(3) du modèle OSI.
+* Modems
+* Pare-feux
 
 #### Classification
 
-<TODO>
+L'étude de la topologie de réseau reconnait huit topologies basiques :
 
-#### Centralisation
-
-<TODO>
-
-#### Decentralisation
-
-<TODO>
-
-### Interfaces
-
-<TODO>
+* **Point à point** : La topologie réseau la plus simple avec un lien dédié entre deux points.
+* **Daisy chain** : Accomplie en connectant chaque machine en série à la suivante.
+* **Bus** : Chaque noeud est connecté via des connecteurs d'interface à un cable central unique.
+* **Etoile** : Chaque noeud périphérique est connecté à un noeud central appelé concentrateur ou commutateur.
+* **Anneau** : Daisy chain dans une boucle fermée.
+* **Maille** : Chaque noeud est interconnecté partiellement ou totalement avec les autres noeuds du réseau.
+* **Arbre** : Collection de réseaux étoiles arrangés hiérarchiquement.
+* **Hybride** : Combine plusieurs topologies réseaux.
 
 ### VLAN
 
-<TODO>
+Les LANs virtuels permette de subdiviser un LAN. Linux peut accepter un traffic marqué VLAN et présenter chaque identifiant VLAN
+comme une interface réseau différente.
+
+Les VLANs permettent :
+
+* Séparation des flux
+* Segmentation, réduction d'un domaine de broadcast
+* Isolation pour améliorer la sécurité
 
 ### Réseautage
 
@@ -90,7 +107,15 @@ Les noeuds d'un réseau sont les points de connexion du médium de transmission 
 
 ### VPN
 
-<TODO>
+Un réseau privé virtuel (VPN) étend un réseau privé à travers un réseau public et permet aux utilisateur d'envoyer et de
+recevoir des données à travers des réseaux publics partagés comme si les ordinateurs étaient directement connectés au réseau
+privé. Les bénéfices d'un VPN incluent une plus grande fonctionnalité, sécurité, et améliore la gestion du réseau privé. Il
+fournit un accès à des ressources inaccessibles sur le réseau public et est généralement utilisé pour les télétravailleurs. Le
+chiffrement est commun bien qu'il ne soit pas une partie inhérente d'une connexion VPN.
+
+Un VPN est créé en établissant une connexion virtuelle point à point via l'usage de circuits dédiés ou à l'aide de protocoles
+tunnels à travers des réseaux existants. Un VPN disponnible depuis un Internet public peut fournir certains bénéfices d'un WAN.
+Pour l'utilisateur, les ressources disponnibles dans un réseau privé peut être accédé à distance.
 
 ### NAS et SAN
 
