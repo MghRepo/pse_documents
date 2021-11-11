@@ -57,6 +57,7 @@ légère pour deux sujets aussi larges.
         - [Secure Shell](#secure-shell)
         - [OpenSSH](#openssh)
         - [Netfilter](#netfilter)
+        - [IDS](#ids)
         - [Contrôle d'accès discrétionnaire et droits](#contrôle-daccès-discrétionnaire-et-droits)
         - [Listes de contrôle d'accès ACL](#listes-de-contrôle-daccès-ACL)
         - [SELinux](#seLinux)
@@ -991,6 +992,10 @@ Nftables offre une API améliorée côté espace utilisateur qui permet des remp
 pare-feu dans une seule transaction Netlink. Ceci accélère les changements de configuration pare-feu pour les installations
 ayant de grands ensembles de règles ; cela peut également permettre d'éviter des situations de compétition durant le changement
 de règle.
+
+#### IDS
+
+<TODO>
 
 #### Contrôle d'accès discrétionnaire et droits
 
