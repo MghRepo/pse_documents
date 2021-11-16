@@ -1073,7 +1073,7 @@ le contexte en entier. Le type SELinux finit habituellement par *_t* (e.g. *http
 
 #### Systemd-nspawn
 
-Systemd-nspawn peut être utilisée pour exécuter une commande ou un OS dans un conteneur léger d'espace de noms. Il est plus
+Systemd-nspawn peut être utilisé pour exécuter une commande ou un OS dans un conteneur léger d'espace de noms. Il est plus
 puissant que *chroot* puisqu'il virtualise la hiérarchie du système de fichiers, mais aussi l'arbre des processus, les
 différents sous-systèmes IPC ainsi que le nom de l'hôte et du domaine.
 
