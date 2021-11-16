@@ -147,7 +147,7 @@ collection, ou sous forme de liste, ce qui peut se révéler être plus adapté 
 programmation fonctionnelle.
 
 Bon nombre d'algorithmes de tri procèdent par comparaison successives, et peuvent donc être définis indépendamment de l'ensemble
-auquel appartiennent les éléments de la relation d'ordre associée. Un même algorithme peut par exemple être utiliser pour trier
+auquel appartiennent les éléments de la relation d'ordre associée. Un même algorithme peut par exemple être utilisé pour trier
 les réels selon la relation d'ordre usuelle "est inférieur ou égal à" et des chaînes de caractères selon l'ordre
 lexicographique. Ces algorithmes se prêtent naturellement à une implémentation polymorphe (différents types).
 
@@ -201,7 +201,7 @@ par échanges successifs, des éléments plus grands que le pivot ; chacun de ce
 manière. On peut rendre la complexité quasiment indépendante des données en utilisant un pivot aléatoire ou en appliquant au
 tableau une permutation aléatoire avant de le trier.
 * **Tri par tas** (*heap sort*) : Il s'agit d'une amélioration du tri par sélection. L'idée est la même (insérer les élément un
-à un dans une structure déjà triée mais l'algorithme utilise une structure de tas, souvent implémentée au moyen d'un tableau.
+à un dans une structure déjà triée) mais l'algorithme utilise une structure de tas, souvent implémentée au moyen d'un tableau.
 * **Tri introspectif** (*Introspective sort*) : Il s'agit d'un hybride du tri rapide et du tri par tas. Par rapport au tri
 rapide, il présente l'avantage d'avoir une complexité *O(n.log n)* dans le pire cas.
 * **Tri arborescent** (*tree sort*): L'idée est d'insérer les éléments un à un dans l'arbre binaire de recherche, puis de lire
@@ -274,12 +274,12 @@ indispensables, les autres pouvant s'en déduire :
 Une file est une structure de donnée basée sur le principe de "premier entré, premier sorti" (FIFO), les premiers éléments
 ajoutés à la file seront les premiers à en être retirés.
 
-Les queues servent à organiser le traitement séquentiel des blocs de données d'origines diverses.
+Les files servent à organiser le traitement séquentiel des blocs de données d'origines diverses.
 
-La théorie des files d'attente, élaborée pour le dimensionnement des réseau téléphoniques, relie le nombre d'usagers, le nombre
+La théorie des files d'attente, élaborée pour le dimensionnement des réseaux téléphoniques, relie le nombre d'usagers, le nombre
 de canaux disponibles, le temps d'occupation moyen du canal, et le temps d'attente à prévoir (Loi de Poisson).
 
-Cette structure est utilisée par exemple :
+Cette structure est utilisée :
 
 * en général, pour mémoriser temporairement des transactions qui doivent attendre pour être traitées ;
 * les serveurs d'impression, qui traitent ainsi les requêtes dans l'ordre dans lequel elles arrivent, et les insèrent dans une
@@ -377,12 +377,12 @@ les étiquettes selon une relation d'ordre total, afin d'implanter les algorithm
 
 Les fichiers et dossiers dans un système de fichiers sont généralement organisés sous forme arborescente.
 
-Les arbre sont en fait rarement utilisés en tant que tels, mais de nombreux types d'arbres avec une structure plus restrictive
+Les arbres sont en fait rarement utilisés en tant que tels, mais de nombreux types d'arbres avec une structure plus restrictive
 existent et sont couramment utilisés en algorithmique, notamment pour gérer des bases de données, ou pour l'indexation de
 fichiers. Ils permettent alors des recherches rapides et efficaces. Par exemple :
 * Les arbres binaires dont chaque noeud a au plus deux fils : ils sont en fait utilisés sous forme d'arbres binaires de
-recherche, de tas, ou encore d'arbres rouge-noir. Les deux derniers exemples sont des cas particuliers d'arbres équilibrés,
-c'est à dire dont les sous-branches ont presque la même hauteur.
+recherche, de tas, ou encore d'arbres rouge-noir. Le dernier exemple est un cas particulier d'arbre équilibré, c'est à dire dont
+les sous-branches ont presque la même hauteur.
 * Les arbres n-aires qui sont une généralisation des arbres binaires : chaque noeud a au plus *n* fils. Les arbres 2-3-4 et les
 arbres B en sont des exemples d'utilisation et sont eux aussi des arbres équilibrés.
 
