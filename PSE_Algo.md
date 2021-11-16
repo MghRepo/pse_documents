@@ -1017,7 +1017,7 @@ logicielles diverses. Elle définit le type d'appels ou de requêtes pouvant êt
 données qui doivent être utilisés, les conventions qui en découlent, etc. Elle peut également fournir des mécanismes d'extension
 de façon à ce que les utilisateurs puissent étendre les fonctionnalités existantes de plusieurs manières et à des degrés variés.
 Une API peut être entièrement personnalisé, spécifique à un composant, ou construite à partir d'un standard afin de garantir
-l'interopérabilité. À travers le masquage d'information, les APIs présente une approche modulaire et permet aux utilisateur
+l'interopérabilité. À travers le masquage d'information, les APIs présentent une approche modulaire et permet aux utilisateurs
 d'accéder à l'interface indépendamment de son implémentation.
 
 ### SOAP
