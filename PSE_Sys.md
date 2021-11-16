@@ -194,7 +194,7 @@ cohérence des données telles que vues par différents processus, dans un envir
 synchronisation est apparue pour la synchronisation de données.
 
 Ces problèmes dits "de synchronisation" et même plus généralement ceux de communication inter-processus dont ils dépendent
-rendent pratiquement toujours la programmation concurrente plus difficile. Certaines méthode de programmation, appelées
+rendent pratiquement toujours la programmation concurrente plus difficile. Certaines méthodes de programmation, appelées
 synchronisation non-blocante, cherchent à éviter d'utiliser des verrous, mais elles sont encore plus difficiles à mettre en
 oeuvre et nécessitent la mise en place de structure de données particulières. La mémoire transactionnelle logicielle en est une.
 

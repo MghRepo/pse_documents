@@ -1016,7 +1016,7 @@ Une Interface de Programmation d'Application (API) est une interface qui défini
 logicielles diverses. Elle définit le type d'appels ou de requêtes pouvant être exécutés, comment les faire, les formats de
 données qui doivent être utilisés, les conventions qui en découlent, etc. Elle peut également fournir des mécanismes d'extension
 de façon à ce que les utilisateurs puissent étendre les fonctionnalités existantes de plusieurs manières et à des degrés variés.
-Une API peut être entièrement personnalisé, spécifique à un composant, ou construite à partir d'un standard afin de garantir
+Une API peut être entièrement personnalisée, spécifique à un composant, ou construite à partir d'un standard afin de garantir
 l'interopérabilité. À travers le masquage d'information, les APIs présentent une approche modulaire et permettent aux
 utilisateurs d'accéder à l'interface indépendamment de son implémentation.
 
@@ -1164,7 +1164,7 @@ et des efforts de développements open source. Typiquement, l'ensemble des infor
 
 Le transfert d'état de représentations (REST) est un style d'architecture logicielle qui utilise un sous-ensemble d'HTTP. Il est
 communément utilisé pour créer des applications interactives qui utilisent des services webs. Un service web qui suit ces lignes
-directrices est appelé RESTful. Un tel service web doit fournir ces ressources web dans une représentation textuelle et
+directrices est appelé RESTful. Un tel service web doit fournir ses ressources webs dans une représentation textuelle et
 permettre de les lire et de les modifier à l'aide d'un protocole sans état et d'un ensemble d'opérations prédéfinies. Cette
 approche permet l'interopérabilité entre les systèmes informatiques sur l'Internet qui fournissent ces services. REST est une
 alternative par exemple au protocole SOAP qui permet d'accéder à un service web.
