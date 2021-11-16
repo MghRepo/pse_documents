@@ -860,8 +860,8 @@ instances séparées sont démarrées pour les utilisateurs connectés afin de d
 D'habitude, systemd n'est pas invoqué directement par l'utilisateur, mais est installé comme le lien symbolique /sbin/init et
 lancé au début du démarrage.
 
-Lorsqu'il est exécuté en tant qu'instance système, systemd interprète le fichier de configuration system.conf et les fichier
-présent dans les répertoires de system.conf.d ; lorsque lancé en tant qu'instance utilisateur, systemd interprète le fichier de
+Lorsqu'il est exécuté en tant qu'instance système, systemd interprète le fichier de configuration system.conf et les fichiers
+présents dans les répertoires de system.conf.d ; lorsque lancé en tant qu'instance utilisateur, systemd interprète le fichier de
 configuration user.conf et les fichiers dans les répertoires user.conf.d
 
 systemd fournit un système de dépendances entre des entités variées appelées "unités" de 11 types différents. Les unités
