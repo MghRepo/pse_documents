@@ -284,7 +284,7 @@ conséquent plusieurs paquets envoyés depuis un processus à un autre peuvent a
 arriver du tout. Certaines configurations spéciales peuvent être requises pour envoyer en broadcast un socket datagramme.
 * **Stream** : Des socket connectés, qui utilisent les protocoles TCP (*Transmission Control Protocol*), SCTP (*Stream Control
 Transmission Protocol*) ou DCCP (*Datagram Congestion Control Protocol*). Un socket flux fournit un flot de données sans
-erreurs, séquencé, unique et ininterrompu avec des mécanismes prédéfinis pour créer et détruire des connections et rapporter des
+erreurs, séquencé, unique et ininterrompu avec des mécanismes prédéfinis pour créer et détruire des connexions et rapporter des
 erreurs. Un socket flux transmet des données de manière fiable, ordonnée sans requérir l'établissement préalable d'un canal de
 communication.
 * **Raw** : Permet l'envoie et la réception de paquets IP sans aucun formatage spécifique à un protocole de la couche transport.
@@ -302,7 +302,7 @@ valides dans le domaine UNIX sont :
 * **SOCK_STREAM** (à comparer au TCP) - pour un socket orienté flux
 * **SOCK_DGRAM** (à comparer à UDP) - pour un socket orienté datagramme qui préserve les limites des messages (comme la plupart
 des implémentations UNIX, les socket de domaine UNIX datagram sont toujours fiables et ne réordonnent pas les datagrammes)
-* **SOCK_SEQPACKET** (à comparer à SCTP) - pour un socket à paquets séquencés orienté connection, qui préserve les limites des
+* **SOCK_SEQPACKET** (à comparer à SCTP) - pour un socket à paquets séquencés orienté connexion, qui préserve les limites des
 messages, et livre les paquets dans l'ordre d'envoi.
 
 Les sockets de domaine Unix sont une composante standard des systèmes d'exploitation POSIX.
@@ -313,7 +313,7 @@ d'exploitation. Les socket de domaine Unix peuvent utiliser le système de fichi
 systèmes d'exploitation, comme Linux, offrent des espaces de noms additionnels.) Les processus référencent les sockets de
 domaine Unix comme des inodes du système de fichier, ainsi 2 processus peuvent communiquer en ouvrant la même socket.
 
-En plus de permettre l'envoi de données, les processus peuvent envoyer des descripteurs de fichiers à travers une connection de
+En plus de permettre l'envoi de données, les processus peuvent envoyer des descripteurs de fichiers à travers une connexion de
 socket de domaine Unix en utilisant les appels systèmes sendmsg() et recvmsg(). Ceci permet au processus qui envoie d'autoriser
 le processus qui reçoit à accéder au descripteur de fichier auquel autrement le processus qui reçoit n'a pas accès. Ceci permet
 d'implémenter une forme rudimentaire de sécurité basée sur l'accessibilité.
@@ -523,15 +523,15 @@ fin, *udevd* dispose d'un ensemble de fichiers de configurations, pouvant être 
 
 * Dans le cas d'un nouvel appareil de stockage USB, *udevd* est notifié par le noyau qui lui-même notifie le udisksd-daemon. Ce
 daemon pourra alors monter le système de fichiers.
-* Dans le cas d'une nouvelle connection de câble Ethernet à la carte d'interface réseau Ethernet (NIC), *udevd* est notifié par
+* Dans le cas d'une nouvelle connexion de câble Ethernet à la carte d'interface réseau Ethernet (NIC), *udevd* est notifié par
 le noyau qui lui-même notifie le NetworkManager-daemon. Le NetworkManager-daemon pourra alors démarrer le daemon client dhcp
-pour cette NIC, ou bien configurer la connection à l'aide d'une configuration manuelle quelconque.
+pour cette NIC, ou bien configurer la connexion à l'aide d'une configuration manuelle quelconque.
 
 Contrairement aux systèmes traditionnels UNIX, ou les noeuds périphériques contenus dans le répertoire */dev* était un ensemble
 de fichiers statique, le gestionnaire de périphérique Linux udev fournit dynamiquement, uniquement les noeuds des périphériques
 actuellement disponibles au système :
 
-* udev fournit un nommage de périphérique persistant, qui ne dépend pas de, par exemple, l'ordre de connection des appareils au
+* udev fournit un nommage de périphérique persistant, qui ne dépend pas de, par exemple, l'ordre de connexion des appareils au
 système.
 * udev s'exécute entièrement en espace utilisateur. Une conséquence est que udev peut exécuter des programmes arbitraires pour
 composer un nom pour le périphérique fonction de ses propriétés, avant que le noeud soit créé; d'ailleurs, l'ensemble du
@@ -549,7 +549,7 @@ Le système reçoit des appels depuis le noyau via des sockets netlink.
 
 Un bus est un système de communication qui permet de transférer des données entre les composants d'un ordinateur ou entre
 ordinateurs. Cette expression couvre tous les composants matériels (fils, fibre optique, etc.) et logiciels, protocoles de
-communications inclus. Les bus informatiques modernes peuvent à la fois utiliser des connections parallèles et séries avec hubs.
+communications inclus. Les bus informatiques modernes peuvent à la fois utiliser des connexions parallèles et séries avec hubs.
 C'est par exemple le cas de l'USB.
 
 Un bus d'adresses est un bus utilisé pour spécifier une adresse physique. Quand un processeur ou un périphérique bénéficiant
@@ -979,12 +979,12 @@ avantages d'une moindre réplication du code et d'une plus grande simplicité d'
 est configuré via l'utilitaire d'espace utilisateur *nft*.
 
 Nftables utilise les blocs de construction de l'infrastructure Netfilter, tels que les hooks existant dans la pile réseau, la
-connection au système de traçage, le composant d'enfilage de l'espace utilisateur, et le sous-système de logs.
+connexion au système de traçage, le composant d'enfilage de l'espace utilisateur, et le sous-système de logs.
 
 Le moteur du noyau nftables ajoute une machine virtuelle simpliste au noyau Linux, capable d'exécuter un bytecode pour inspecter
 un paquet réseau et prendre les décisions concernant la gestion de ce paquet. Elle peut obtenir des données de la part du paquet
 lui-même, regarder les méta données associées (par exemple l'interface d'entrée), et gérer les données de traçage de
-connections. Les opérateurs de comparaison arithmétiques et bits à bits peuvent être utilisés pour prendre des décisions en
+connexions. Les opérateurs de comparaison arithmétiques et bits à bits peuvent être utilisés pour prendre des décisions en
 fonction de ces données. La machine virtuelle est aussi capable de réaliser des manipulations sur des ensembles de donnéees
 (typiquement des adresses IP), en permettant de remplacer de multiples opérations de comparaisons par un ensemble d'inspections.
 
@@ -1246,7 +1246,7 @@ l'évaluation de tous les pods qui lui sont associés.
 Un service Kubernetes est un ensemble de pods travaillant de concert, tel une couche d'une application multi-couche. L'ensemble
 de pods qui constitue un service sont définis par un sélecteur d'étiquette. Kubernetes fournit deux modes de découverte de
 service, en utilisant des variables d'environnement, ou en utilisant le DNS Kubernetes. La découverte de service assigne un
-adresse IP fixe et un nom DNS au service, et réparti la charge du traffic en utilisant un DNS round-robin pour les connections
+adresse IP fixe et un nom DNS au service, et réparti la charge du traffic en utilisant un DNS round-robin pour les connexions
 réseaux à cette adresse IP au milieu des pods vérifiant ce sélecteur (même si des erreurs peuvent amener les pods à passer d'une
 machine à une autre). Par défaut un service est exposé à l'intérieur d'un cluster (par exemple les pods back-end peuvent être
 groupés en service, recevant des requêtes de la part des pods front-end réparties entre eux), mais un service peut également
@@ -1637,7 +1637,7 @@ utilisateurs vérifiés par le système d'authentification sont autorisés à se
 base de données.
 
 Ces méthodes sont spécifiées dans le fichier de configuration d'authentification de groupe basé sur l'hôte (pg_hba.conf), qui
-détermine quelles connections sont autorisées. Cela permet un contrôle sur quel utilisateur peut se connecter à quelle base de
+détermine quelles connexions sont autorisées. Cela permet un contrôle sur quel utilisateur peut se connecter à quelle base de
 données, depuis quelle adresse IP, intervalle d'adresse IP ou domaine socket, avec quel système d'authentification, et si la
 connexion doit utiliser la couche de transport de sécurité (TLS)
 
