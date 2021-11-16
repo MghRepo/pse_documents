@@ -280,8 +280,8 @@ Plusieurs types de sockets internet sont disponibles :
 
 * **Datagram** : Des sockets non connectées, qui utilisent le protocole UDP (*User Datagram Protocol*). Chaque paquet envoyé ou
 reçu avec un socket datagramme est adressé et routé individuellement. L'ordre ainsi que la fiabilité ne sont pas garantis, par
-conséquent plusieurs paquet envoyé depuis un processus à l'autre peut arriver dans n'importe quel ordre ou bien ne pas arriver
-du tout. Certaines configurations spéciales peuvent être requises pour envoyer en broadcast un socket datagramme.
+conséquent plusieurs paquets envoyés depuis un processus à un autre peuvent arriver dans n'importe quel ordre ou bien ne pas
+arriver du tout. Certaines configurations spéciales peuvent être requises pour envoyer en broadcast un socket datagramme.
 * **Stream** : Des socket connectés, qui utilisent les protocoles TCP (*Transmission Control Protocol*), SCTP (*Stream Control
 Transmission Protocol*) ou DCCP (*Datagram Congestion Control Protocol*). Un socket flux fournit un flot de données sans
 erreurs, séquencé, unique et ininterrompu avec des mécanismes prédéfinis pour créer et détruire des connections et rapporter des
