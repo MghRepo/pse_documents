@@ -579,7 +579,7 @@ mère, c'est le premier logiciel à s'exécuter lors de la mise sous tension.
 Le BIOS dans les PCs modernes initialise et teste les composants matériels du système, et charge un chargeur d'amorçage depuis
 l'appareil de stockage de masse qui initialise un système d'exploitation.
 
-La plupart des implémentations du BIOS sont spécifique à un modèle de carte mère, en s'interfaçant avec différents appareil et
+La plupart des implémentations du BIOS sont spécifiques à un modèle de carte mère, en s'interfaçant avec différents appareil et
 en particulier le chipset. Anciennement, le microgiciel BIOS était stocké sur une puce ROM de la carte mère. De nos jours, le
 contenu du BIOS est stocké sur de la mémoire flash de façon à pouvoir être réécrite sans enlever la puce de la carte mère. Ceci
 permet une mise à jour aisée du BIOS, mais également l'infection de l'ordinateur via des rootkits du BIOS. De plus, si une mise
