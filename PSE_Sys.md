@@ -1037,11 +1037,11 @@ répond fondamentalement aux questions telles que :
 "Est-ce que **le sujet** peut faire cette **action** à cet **objet** ?" e.g : "Est-ce qu'un serveur web peut accéder aux
 fichiers dans le répertoire home des utilisateurs ?"
 
-Un noyau Linux intégrant SELinux impose des politiques de contrôles d'accès obligatoire qui confine les programmes utilisateurs
-et les services système, ainsi que les accès aux fichiers et aux ressources réseaux. Limiter les privilèges au minimum requis
-pour fonctionner réduit ou élimine les capacités de ces programmes et daemons à causer des dommages si ceux-ci sont compromis ou
-défaillants (par exemple via des dépassements de tampons ou des mauvaises configurations). Ce mécanisme de confinement
-fonctionne indépendamment des mécanismes de contrôle d'accès discrétionnaire traditionnels de Linux. Le concept de
+Un noyau Linux intégrant SELinux impose des politiques de contrôles d'accès obligatoire qui confinent les programmes
+utilisateurs et les services systèmes, ainsi que les accès aux fichiers et aux ressources réseaux. Limiter les privilèges au
+minimum requis pour fonctionner réduit ou élimine les capacités de ces programmes et daemons à causer des dommages si ceux-ci
+sont compromis ou défaillants (par exemple via des dépassements de tampons ou des mauvaises configurations). Ce mécanisme de
+confinement fonctionne indépendamment des mécanismes de contrôle d'accès discrétionnaire traditionnels de Linux. Le concept de
 super utilisateur n'existe pas, et ne partage pas les raccourcis bien connus des mécanismes de sécurité traditionnels, tel
 qu'une dépendance aux binaires setuid/setgid.
 
