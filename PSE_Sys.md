@@ -1086,7 +1086,7 @@ Les conteneurs ainsi créés peuvent être gérés à l'aide de la commande *mac
 
 #### Conteneurisation LXC
 
-LXC est une méthode de virtualisation au niveau du système d'exploitation permettant d'exécuter plusieurs système isolés Linux
+LXC est une méthode de virtualisation au niveau du système d'exploitation permettant d'exécuter plusieurs systèmes isolés Linux
 sur un système hôte de contrôle en utilisant un unique noyau Linux.
 
 Le noyau Linux fournit la fonctionnalité des cgroups qui permet une limitation et une priorisation des ressources (CPU, mémoire,
