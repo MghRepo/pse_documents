@@ -254,7 +254,7 @@ comportement rend la construction de pipeline en shell aisée.
 
 Une socket réseau est une structure logicielle comprise dans un noeud réseau qui sert de point d'arrivée pour les données
 envoyées et reçues à travers le réseau. La structure et les propriétés d'une socket sont définies par une interface de
-programmation (API) de l'architecture réseau. Les sockets sont créées uniquement durant l' intervalle de temps d'un processus
+programmation (API) de l'architecture réseau. Les sockets sont créées uniquement durant l'intervalle de temps d'un processus
 d'une application s'exécutant dans le noeud.
 
 Du fait de la standardisation des protocoles TCP/IP au cours du développement d'Internet, le terme *socket réseau* est plus
