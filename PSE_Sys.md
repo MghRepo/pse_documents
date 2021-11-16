@@ -267,8 +267,8 @@ de communiquer à travers un réseau utilisant les protocoles que la pile implé
 données utiles des paquets IP entrants à l'application correspondante en lisant l'information de l'adresse socket des entêtes
 des protocoles IP et transport et en enlevant ces entêtes des données applications.
 
-L'interface de programmation que les programmes utilisent pour communiquer avec la pile de protocole, utilisant les socket
-réseau, est appelée **socket API**. Les API sockets internet sont généralement basées sur le standard socket de Berkeley. Dans
+L'interface de programmation que les programmes utilisent pour communiquer avec la pile de protocole, utilisant les sockets
+réseaux, est appelée **socket API**. Les API sockets internet sont généralement basées sur le standard socket de Berkeley. Dans
 le standard socket de Berkeley, les socket sont une forme de descripteur de fichier (*read, write, open, close*).
 
 Dans les protocoles internet standards TCP et UDP, une adresse socket est la combinaison d'une adresse IP et d'un numéro de
