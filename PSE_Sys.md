@@ -1072,7 +1072,7 @@ le contexte en entier. Le type SELinux finit habituellement par *_t* (e.g. *http
 
 #### PAM
 
-Les modules d'authentification attachable linux (PAM) fournissent un quadriciel pour une authentification de l'utilisateur sur l'ensemble du système. Cela permet de développer des programmes indépendants du schéma d'authentification. Ces programmes ont besoin que des "modules d'authentifications" leurs soient attachés à l'exécution pour fonctionner. Le module d'authentification attaché correspondant au programme dépend de l'installation locale du système et se trouve à la discrétion de l'administrateur.
+Les modules d'authentification attachables linux (PAM) fournissent un quadriciel pour une authentification de l'utilisateur sur l'ensemble du système. Cela permet de développer des programmes indépendants du schéma d'authentification. Ces programmes ont besoin que des "modules d'authentification" leurs soient attachés à l'exécution pour fonctionner. Le module d'authentification attaché au programme est à la discrétion de l'administrateur système et dépend de l'installation locale.
 
 ### Virtualisation et conteneurisation
 
