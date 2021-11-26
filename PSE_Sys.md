@@ -61,6 +61,7 @@ légère pour deux sujets aussi larges.
         - [Contrôle d'accès discrétionnaire et droits](#contrôle-daccès-discrétionnaire-et-droits)
         - [Listes de contrôle d'accès ACL](#listes-de-contrôle-daccès-ACL)
         - [SELinux](#seLinux)
+        - [PAM](#pam)
     + [Virtualisation et conteneurisation](#virtualisation-et-conteneurisation)
         - [Systemd-nspawn](#systemd-nspawn)
         - [Conteneurisation LXC](#conteneurisation-lxc)
@@ -995,7 +996,11 @@ de règle.
 
 #### IDS
 
-<TODO>
+Un système de détection d'intrusion (IDS) est un appareil ou une application logicielle qui surveille un réseau ou des systèmes
+afin de cibler et de détecter des activités malveillantes ou des violations de la politique de sécurité. Chaque activité
+d'intrusion ou de violation est généralement rapportée soit à un administrateur ou centralisée dans un système de gestion
+d'événement et d'information de sécurité (SIEM). Un système SIEM combine les sorties de sources multiples et utilise des
+techniques de filtrage d'alarme afin de distinguer une activité malveillante d'une fausse alarme.
 
 #### Contrôle d'accès discrétionnaire et droits
 
@@ -1068,6 +1073,13 @@ Le contexte SELinux contient plusieurs champs : utilisateur, role, type, et nive
 est sans doute la plus importante quand il s'agit de la politique SELinux, du fait que la règle la plus commune de la politique
 SELinux qui définit les intéractions autorisées entre les processus et les ressources systèmes utilise les types SELinux et non
 le contexte en entier. Le type SELinux finit habituellement par *_t* (e.g. *httpd_t*).
+
+#### PAM
+
+Les modules d'authentification attachables linux (PAM) fournissent un quadriciel pour une authentification de l'utilisateur sur
+l'ensemble du système. Cela permet de développer des programmes indépendants du schéma d'authentification. Ces programmes ont
+besoin que des "modules d'authentification" leurs soient attachés à l'exécution pour fonctionner. Le module d'authentification
+attaché au programme est à la discrétion de l'administrateur système et dépend de l'installation locale.
 
 ### Virtualisation et conteneurisation
 
