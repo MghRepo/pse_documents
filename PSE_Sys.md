@@ -6,7 +6,7 @@ Cet exposé traite de la partie système et données du programme PSE.
 
 Dans la première partie j'ai essayé de présenter à peu près logiquement et de manière globale mais loin d'être exhaustive, les
 éléments d'un système d'exploitation (Linux). Pour aller plus loin sur l'ensemble des sujets évoqués on peut aller retrouver [la
-documentation du noyau linux](https://www.kernel.org/doc/html/latest/). Les deux autres parties concernent la gestion des
+documentation du noyau linux](https://www.noyau.org/doc/html/latest/). Les deux autres parties concernent la gestion des
 données structurées (Bases de données), semi-structurées et déstructurées (Big data et lacs de données) avec une approche assez
 légère pour deux sujets aussi larges.
 
@@ -814,7 +814,7 @@ processus de démarrage ainsi que la mémoire, les périphériques, les requête
 traduisant en instructions de traitements de données pour le processeur.
 
 Le code critique du noyau est généralement chargé dans une aire de la mémoire séparée, qui est protégée des accès via les
-applications logicielles ou d'autres parties moins critiques d'un système d'exploitation. Le kernel effectue des tâches telles
+applications logicielles ou d'autres parties moins critiques d'un système d'exploitation. Le noyau effectue des tâches telles
 que, l'exécution de processus, la gestions de périphériques matériels tels que le disque dur, et la gestion des interruptions,
 dans l'espace noyau protégé. Par contraste, des programmes applicatifs tels que des navigateurs, des traitements de texte, ou
 des lecteurs audio ou vidéo utilisent une aire séparée de la mémoire, l'espace utilisateur. Cette séparation empêche les données
@@ -825,7 +825,7 @@ L'interface noyau est une couche d'abstraction de bas niveau. Quand un processus
 un appel système, généralement à travers une fonction englobante.
 
 Il existe différentes architectures de noyau. Les noyaux monolithiques s'exécutent entièrement dans un espace d'adressage unique
-avec le processeur en mode supervision, principalement pour des questions de rapidité. Les micro-kernels exécutent la plupart de
+avec le processeur en mode supervision, principalement pour des questions de rapidité. Les micro-noyaus exécutent la plupart de
 leurs services dans l'espace utilisateur, de la même manière que les processus utilisateurs, principalement pour des
 considérations de résilience et de modularité. Le noyau Linux est monolithique, bien qu'également modulaire, puisqu'il peut
 insérer et supprimer des module noyaux chargeable à l'exécution.
@@ -998,13 +998,13 @@ de règle.
 #### BPF et eBPF
 
 Le filtre de paquet BSD (BPF) est une architecture de capture de paquets en espace utilisateur. Celle-ci repose sur une machine
-virtuelle à registre qui fonctionne dans le kernel et permet d'évaluer les règles de filtrage sans recopies des paquets. Ce
+virtuelle à registre qui fonctionne dans le noyau et permet d'évaluer les règles de filtrage sans recopies des paquets. Ce
 mécanisme est utilisé par des outils standards comme *tcpdump* pour sélectionner les paquets à capturer.
 
 Récemment ce mécanisme à évolué vers une version étendue (eBPF) qui est la version moderne d'architecture utilisée : 
 
 * passage de 2 registres 32 bits à 10 registres 64 bits
-* possibilité d'appeler certaines fonctions du kernel
+* possibilité d'appeler certaines fonctions du noyau
 
 eBPF permet d'exécuter des programmes contrôlés (absence de boucles, pointeurs vérifiés etc.) dans l'espace noyau à l'aide d'un
 compilateur JIT qui transforme le programme BPF en code natif.
