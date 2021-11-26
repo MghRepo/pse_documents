@@ -57,6 +57,7 @@ légère pour deux sujets aussi larges.
         - [Secure Shell](#secure-shell)
         - [OpenSSH](#openssh)
         - [Netfilter](#netfilter)
+        - [BPF et eBPF](#bpf-et-ebpf)
         - [IDS](#ids)
         - [Contrôle d'accès discrétionnaire et droits](#contrôle-daccès-discrétionnaire-et-droits)
         - [Listes de contrôle d'accès ACL](#listes-de-contrôle-daccès-ACL)
@@ -993,6 +994,24 @@ Nftables offre une API améliorée côté espace utilisateur qui permet des remp
 pare-feu dans une seule transaction Netlink. Ceci accélère les changements de configuration pare-feu pour les installations
 ayant de grands ensembles de règles ; cela peut également permettre d'éviter des situations de compétition durant le changement
 de règle.
+
+#### BPF et eBPF
+
+Le filtre de paquet BSD (BPF) est une architecture de capture de paquets en espace utilisateur. Celle-ci repose sur une machine
+virtuelle à registre qui fonctionne dans le kernel et permet d'évaluer les règles de filtrage sans recopies des paquets. Ce
+mécanisme est utilisé par des outils standards comme *tcpdump* pour sélectionner les paquets à capturer.
+
+Récemment ce mécanisme à évolué vers une version étendue (eBPF) qui est la version moderne d'architecture utilisée actuellement
+: 
+
+* passage de 2 registre 32 bits à 10 registres 64 bits
+* possibilité d'appeler certaines fonctions du kernel
+
+eBPF permet d'exécuter des programmes vérifiés (absence de boucles, pointeurs etc.) dans l'espace noyau à l'aide d'un
+compilateur JIT qui transforme le programme BPF en code natif.
+
+Les programmes eBPF peuvent être utilisés pour implémenter des fonctionnalités de supervision, de sécurité et de réseautage
+hautes performances.
 
 #### IDS
 
