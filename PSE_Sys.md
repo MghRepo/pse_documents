@@ -6,7 +6,7 @@ Cet exposé traite de la partie système et données du programme PSE.
 
 Dans la première partie j'ai essayé de présenter à peu près logiquement et de manière globale mais loin d'être exhaustive, les
 éléments d'un système d'exploitation (Linux). Pour aller plus loin sur l'ensemble des sujets évoqués on peut aller retrouver [la
-documentation du noyau linux](https://www.noyau.org/doc/html/latest/). Les deux autres parties concernent la gestion des
+documentation du noyau linux](https://www.kernel.org/doc/html/latest/). Les deux autres parties concernent la gestion des
 données structurées (Bases de données), semi-structurées et déstructurées (Big data et lacs de données) avec une approche assez
 légère pour deux sujets aussi larges.
 
