@@ -107,7 +107,7 @@ Les VLANs permettent :
 
 ### VPN
 
-Un réseau privé virtuel (VPN) étend un réseau privé à travers un réseau public et permet aux utilisateur d'envoyer et de
+Un réseau privé virtuel (*VPN*) étend un réseau privé à travers un réseau public et permet aux utilisateur d'envoyer et de
 recevoir des données à travers des réseaux publics partagés comme si les ordinateurs étaient directement connectés au réseau
 privé. Les bénéfices d'un VPN incluent une plus grande fonctionnalité, sécurité, et améliore la gestion du réseau privé. Il
 fournit un accès à des ressources inaccessibles sur le réseau public et est généralement utilisé pour les télétravailleurs. Le
@@ -118,6 +118,18 @@ tunnels à travers des réseaux existants. Un VPN disponnible depuis un Internet
 Pour l'utilisateur, les ressources disponnibles dans un réseau privé peuvent être accédées à distance.
 
 ### NAS et SAN
+
+Un stockage attaché réseau (*NAS*) est un serveur de stockage informatique de niveau fichier (à l'instar du stockage de niveau
+bloc) connecté à un réseau informatique fournissant un accès aux données à un groupe de clients hétérogènes. Un NAS est
+spécialisé dans le service de fichiers soit par son matériel, son logiciel ou sa configuration. Il est souvent fabriqué en tant
+qu'application matérielle - généralement une réalisation fonctionnelle d'ordinateur spécialisé. Les systèmes NAS contiennent un
+ou plusieurs disques de stockage, souvent arrangés logiquement dans des conteneurs de stockage redondants ou RAID. Ils
+fournissent un accès aux fichiers en utilisant des protocoles de partage réseau tels que NFS ou SMB. Les bénéfices potentiels
+d'un NAS dédié, comparé à un serveur classique servant également des fichiers sont :
+
+* Un accès aux données plus rapide
+* Une facilité d'administration
+* Une configuration simplifiée.
 
 <TODO>
 
