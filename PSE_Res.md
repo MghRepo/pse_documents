@@ -12,9 +12,9 @@ Cet exposé traite des parties réseau et logiciels du programme PSE.
         - [Noeuds](#noeuds)
         - [Classification](#classification)
     + [VLAN](#vlan)
-    + [Réseautage](#réseautage)
     + [VPN](#vpn)
-    + [NAS et SAN](#nas-et-san)
+    + [NAS](#nas)
+    + [SAN](#san)
     + [Modèle OSI](#modèle-osi)
     + [Architecture TCP/IP](#architecture-tcpip)
     + [Protocoles](#protocoles)
@@ -23,7 +23,8 @@ Cet exposé traite des parties réseau et logiciels du programme PSE.
         - [Couche internet](#couche-internet)
         - [Couche liaison](#couche-liaison)
     + [MIB](#mib)
-    + [Active Directory et Samba](#active-directory-et-samba)
+    + [Active Directory](#active-directory)
+    + [Samba](#samba)
 * [Logiciels](#logiciels)
     + [Architecture logicielle](#architecture-logicielle)
         - [Client serveur](#client-serveur)
@@ -101,10 +102,6 @@ Les VLANs permettent :
 * Segmentation, réduction d'un domaine de broadcast
 * Isolation pour améliorer la sécurité
 
-### Réseautage
-
-<TODO>
-
 ### VPN
 
 Un réseau privé virtuel (*VPN*) étend un réseau privé à travers un réseau public et permet aux utilisateur d'envoyer et de
@@ -117,7 +114,7 @@ Un VPN est créé en établissant une connexion virtuelle point à point via l'u
 tunnels à travers des réseaux existants. Un VPN disponnible depuis un Internet public peut fournir certains bénéfices d'un WAN.
 Pour l'utilisateur, les ressources disponnibles dans un réseau privé peuvent être accédées à distance.
 
-### NAS et SAN
+### NAS
 
 Un stockage attaché réseau (*NAS*) est un serveur de stockage informatique de niveau fichier (à l'instar du stockage de niveau
 bloc) connecté à un réseau informatique fournissant un accès aux données à un groupe de clients hétérogènes. Un NAS est
@@ -130,6 +127,10 @@ d'un NAS dédié, comparé à un serveur classique servant également des fichie
 * Un accès aux données plus rapide
 * Une facilité d'administration
 * Une configuration simplifiée.
+
+<TODO>
+
+### SAN
 
 <TODO>
 
@@ -425,7 +426,15 @@ les liens qui ne font pas partie de l'arbre couvrant, laissant un unique lien ac
 
 ### MIB
 
-### Active Directory et Samba
+<TODO>
+
+### Active Directory
+
+<TODO>
+
+### Samba
+
+<TODO>
 
 ## Logiciels
 
