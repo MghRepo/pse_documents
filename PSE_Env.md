@@ -143,7 +143,7 @@ les quatre libertés logicielles.
 
 ### Devops
 
-![Dev ops](https://blogs.vmware.com/management/files/2020/03/2020-03-02_14-18-57.png)
+![Dev ops](https://blogs.vmware.com/management/files/2020/03/2020-03-02_14-18-57.png "devops")
 
 ## Fonctions de PSE
 
