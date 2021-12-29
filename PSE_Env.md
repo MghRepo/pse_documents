@@ -143,6 +143,24 @@ les quatre libertés logicielles.
 
 ### Devops
 
+Devops est un ensemble de pratiques qui combine développement logiciel (*Dev*) et l'informatique technique opérationnelle
+(*Ops*). Il a pour but de réduire la durée des cycles de vie des développements systèmes et de permettre une livraison en
+continu (*CD*) de logiciel d'excellente qualité. Devops est complémentaire du développement logiciel Agile ; certains aspects
+sont issus de la méthodologie Agile.
+
+Du fait que Devops se veut être une méthode de travail multifonctionnelle, ceux qui pratiquent la méthodologie utilisent
+différents ensembles d'outils - appelé chaîne d'outil - plutôt qu'un outil unique. Ces chaînes d'outils doivent correspondre
+dans l'une ou plusieurs des catégories suivantes, qui reflètent les aspects clefs des processus de développement et de
+livraison.
+
+1. Code - le développement et la vérification du code, les outils de gestion du code source, la fusion de code.
+2. Construction - les outils d'intégration continue, le statut de construction.
+3. Test - les outils de tests en continu qui fournissent un retour rapide sur les risques opérationnels.
+4. Empaquetage - Dépot logiciel, mise à disposition de l'application pré-déploiement.
+5. Publication - gestion des changements, approbation et automatisation des publications.
+6. Configuration - configuration et gestion d'infrastructure, outils d'infrastructure as code.
+7. Surveillance - applications de surveillance des performances, expérience de l'utilisateur final.
+
 ![dev-ops](https://github.com/MghRepo/pse_documents/blob/main/.images/devops.png "dev-ops")
 
 ## Fonctions de PSE
