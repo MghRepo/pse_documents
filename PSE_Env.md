@@ -141,17 +141,28 @@ les quatre libertés logicielles.
 
 ### Méthode agile
 
+Dans le développement logiciel, les pratiques Agile incluent :
+
+* une découverte des besoins
+* des solutions d'amélioration à travers l'effort collaboratifs d'équipes transverses et auto-organisées avec leurs
+clients/utilisateurs finaux
+* une plannification adaptative
+* un développement évolutionnaire
+* une livraison rapide
+* une amélioration en continu
+* des réponses flexibles aux changement de besoins
+* une capacité et une compréhension des problèmes à résoudre.
+
 ### Devops
 
-Devops est un ensemble de pratiques qui combine développement logiciel (*Dev*) et l'informatique technique opérationnelle
+Devops est un ensemble de pratiques qui combine développement logiciel (*Dev*) et informatique technique opérationnelle
 (*Ops*). Il a pour but de réduire la durée des cycles de vie des développements systèmes et de permettre une livraison en
-continu (*CD*) de logiciel d'excellente qualité. Devops est complémentaire du développement logiciel Agile ; certains aspects
+continu (*CD*) de logiciel de qualité. Devops est complémentaire du développement logiciel Agile ; certains aspects
 sont issus de la méthodologie Agile.
 
-Du fait que Devops se veut être une méthode de travail multifonctionnelle, ceux qui pratiquent la méthodologie utilisent
-différents ensembles d'outils - appelé chaîne d'outil - plutôt qu'un outil unique. Ces chaînes d'outils doivent correspondre
-dans l'une ou plusieurs des catégories suivantes, qui reflètent les aspects clefs des processus de développement et de
-livraison.
+Du fait que Devops se veut être une méthode de travail transverse, ceux qui pratiquent la méthodologie utilisent différents
+ensembles d'outils - appelé chaîne d'outil - plutôt qu'un outil unique. Ces chaînes d'outils doivent correspondre à l'une ou
+plusieurs des catégories suivantes, qui reflètent les aspects clefs des processus du développement et de la livraison.
 
 1. Code - le développement et la vérification du code, les outils de gestion du code source, la fusion de code.
 2. Construction - les outils d'intégration continue, le statut de construction.
