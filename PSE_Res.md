@@ -438,6 +438,11 @@ La base de donnée est hierarchique et chaque entrée est adressée à travers u
 
 ### Active Directory
 
+Un Active Directory (*AD*) est un service de répertorisation (nommage) développé par Microsoft pour les domaines réseaux
+Windows. Il est inclus dans la plupart des systèmes d'exploitation Windows Server comme un ensemble de processus et de services.
+Initialement, Active Directory était utilisé uniquement pour une gestion du domaine centralisée. Néanmoins Active Directory est
+finalement devenu un nom parapluie pour un large pannel de services de relation/identité basé répertoire.
+
 <TODO>
 
 ### Samba
