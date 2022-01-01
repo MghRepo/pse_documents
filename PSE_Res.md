@@ -443,11 +443,21 @@ Windows. Il est inclus dans la plupart des systèmes d'exploitation Windows Serv
 Initialement, Active Directory était utilisé uniquement pour une gestion du domaine centralisée. Néanmoins Active Directory est
 finalement devenu un nom parapluie pour un large pannel de services de relation/identité basé répertoire.
 
-<TODO>
+Un serveur exécutant le service de domaine active directory (AD DS) est appelé le contrôleur de domaine. Il authentifie et
+autorise tous les utilisateurs et ordinateurs dans un domaine Windows de type réseau, gérant et appliquant les politiques de
+sécurité pour tous les ordinateurs, installant et mettant à jour le logiciel. Un Active Directory permet la gestion et le
+stockage d'information, fournit des mécanismes d'autorisation et d'authentification, et établit un cadre pour déployer d'autres
+services liés : Service de certification, service de fédération d'Active Directory, service LDAP et service de gestion des
+droits.
+
+Active Directory utilise LDAP, Kerberos et DNS.
 
 ### Samba
 
-<TODO>
+Samba est une réimplémentation libre du protocole réseau propriétaire SMB. Samba fournit des services fichiers et d'impression
+pour divers clients Microsoft Windows et peut s'intégrer avec un serveur de domaine Microsoft Windows, soit en tant que
+contrôleur de domaine (DC) soit en tant que membre de domaine. Depuis la version 4, il supporte les domaines Microsoft Windows
+NT et Active Directory.
 
 ## Logiciels
 
@@ -602,7 +612,8 @@ réseau à des plugins écrits spécifiquement.
 * Supervision à distance via des tunnels chiffrés SSL ou SSH.
 * Un simple plugin qui permet aux utilisateurs de facilement développer leurs propres vérifications de services selon leurs
 besoins, en utilisant les outils de leur choix (scripts shell, C++, Perl, Ruby, Python, PHP, C#, etc.)
-<TODO>
+* Des plugins de mise en forme des données disponnibles
+* Vérification de services parallélisée etc.
 
 ### Sauvegarde
 
