@@ -41,7 +41,6 @@ Cet exposé traite des parties réseau et logiciels du programme PSE.
         - [Vagrant](#vagrant)
         - [Terraform](#terraform)
     + [Métrologie et supervision Nagios](#métrologie-et-supervision-nagios)
-    + [Sauvegarde](#sauvegarde)
 
 ## Réseau
 
@@ -450,7 +449,7 @@ stockage d'information, fournit des mécanismes d'autorisation et d'authentifica
 services liés : Service de certification, service de fédération d'Active Directory, service LDAP et service de gestion des
 droits.
 
-Active Directory utilise LDAP, Kerberos et DNS.
+Active Directory utilise LDAP, la version Microsoft de Kerberos et DNS.
 
 ### Samba
 
@@ -614,7 +613,3 @@ réseau à des plugins écrits spécifiquement.
 besoins, en utilisant les outils de leur choix (scripts shell, C++, Perl, Ruby, Python, PHP, C#, etc.)
 * Des plugins de mise en forme des données disponnibles
 * Vérification de services parallélisée etc.
-
-### Sauvegarde
-
-<TODO>
