@@ -105,7 +105,7 @@ dans une structure de données.
 Un sous-programme permet la réutilisation d'une partie du code et ainsi le développement des algorithmes récursifs.
 
 Beaucoup de langages modernes ne supportent pas directement la notion de sous-programme au profit de constructions de haut
-niveau qui peuvent être appelées, d'un langage à l'autre *procédure, fonction, méthode*, ou *routine*. Ces constructions
+niveau qui peuvent être appelées, d'un langage à l'autre **procédure, fonction, méthode**, ou **routine**. Ces constructions
 ajoutent la notion de passage de paramètres et surtout le cloisonnement des espaces de noms pour éviter que le sous-programme
 ait un effet de bord sur la routine appelante.
 
@@ -130,14 +130,14 @@ tâches concourantes.
 
 ### Programmation événementielle
 
-La programmation évènementielle est une autre façon de contrôler le flot d'exécutions d'un programme. Il s'agit de créer des
+La programmation évènementielle est une autre façon de contrôler le flot d'exécution d'un programme. Il s'agit de créer des
 gestionnaires qui viendront s'abonner à une boucle mère, chargée d'aiguiller les évènements qui affectent le logiciel.
 
 ## Algorithmes de tri
 
 Un algorithme de tri est, en informatique ou en mathématiques, un algorithme qui permet d'organiser une collection d'objets
 selon une relation d'ordre déterminée. Les objets à trier sont des éléments d'un ensemble muni d'un ordre total. Il est par
-exemple fréquent de trier des entier selon la relation d'ordre usuelle "est inférieur ou égal à". Les algorithmes de tris sont
+exemple fréquent de trier des entiers selon la relation d'ordre usuelle "est inférieur ou égal à". Les algorithmes de tris sont
 utilisés dans de très nombreuses situations. Ils sont en particulier utiles à de nombreux algorithmes plus complexes dont
 certains algorithmes de recherche, comme la recherche dichotomique. Ils peuvent également servir pour mettre des données sous
 forme canonique ou les rendre plus lisibles pour l'utilisateur.
@@ -146,9 +146,9 @@ La collection à trier est souvent donnée sous forme de tableau, afin de permet
 collection, ou sous forme de liste, ce qui peut se révéler être plus adapté à certains algorithmes et l'usage de la
 programmation fonctionnelle.
 
-Bon nombre d'algorithmes de tri procèdent par comparaison successives, et peuvent donc être définis indépendamment de l'ensemble
-auquel appartiennent les éléments de la relation d'ordre associée. Un même algorithme peut par exemple être utilisé pour trier
-les réels selon la relation d'ordre usuelle "est inférieur ou égal à" et des chaînes de caractères selon l'ordre
+Bon nombre d'algorithmes de tri procèdent par comparaisons successives, et peuvent donc être définis indépendamment de
+l'ensemble auquel appartiennent les éléments de la relation d'ordre associée. Un même algorithme peut par exemple être utilisé
+pour trier les réels selon la relation d'ordre usuelle "est inférieur ou égal à" et des chaînes de caractères selon l'ordre
 lexicographique. Ces algorithmes se prêtent naturellement à une implémentation polymorphe (différents types).
 
 Les algorithmes de tri sont souvent étudiés dans les cours d'algorithmique pour introduire des notions comme la complexité
@@ -161,7 +161,7 @@ traité, tout en tenant compte des contraintes imposées par celui-ci. Les princ
 différencier les algorithmes de tri, outre leur principe de fonctionnement, sont la complexité temporelle, la complexité
 spatiale et le caractère stable.
 
-La complexité temporelle (en moyenne ou dans le pire des cas) mesure le nombre d'opération élémentaires effectuées pour trier
+La complexité temporelle (en moyenne ou dans le pire des cas) mesure le nombre d'opérations élémentaires effectuées pour trier
 une collection d'éléments. C'est un critère majeur pour comparer les algorithmes de tri, puisque c'est une estimation directe du
 temps d'exécution de l'algorithme. Dans le cas des algorithmes de tri par comparaison, la complexité en temps est le plus
 souvent assimilable au nombre de comparaisons effectuées, la comparaison et l'échange éventuel de deux valeurs s'effectuant en
@@ -252,7 +252,7 @@ concrète d'un type abstrait.
 
 ### Pile
 
-Une pile est une structure de données fondée sur le principe "dernier arrivé, premier sorti" (LIFO), ce qui veut dire qu'en
+Une pile est une structure de données fondée sur le principe "dernier entré, premier sorti" (LIFO), ce qui veut dire qu'en
 général, le dernier élément ajouté à la pile, sera le premier à en sortir.
 
 La plupart des microprocesseurs gèrent nativement une pile. Elle correspond alors à une zone de la mémoire, et le processeur
