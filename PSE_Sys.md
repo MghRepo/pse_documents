@@ -49,6 +49,7 @@ légère pour deux sujets aussi larges.
         - [Chargeur d'amorçage](#chargeur-damorçage)
         - [Initramfs](#initramfs)
         - [Noyau](#noyau)
+        - [Talon de démarrage UEFI et Image noyau unifiée](#talon-de-démarrage-uefi-et-image-noyau-unifiée)
         - [Cgroups](#cgroups)
         - [Espaces de noms](#espaces-de-noms)
         - [Systemd](#systemd)
@@ -615,7 +616,10 @@ et en fonction de ses paramètres, exécute ensuite le chargeur d'amorçage spé
 variables qui indiquent les chemins du système de fichier vers les chargeurs d'amorçages ou noyaux.
 
 Les chargeurs d'amorçage peuvent également être détectés automatiquement par UEFI grâce à des chemins standardisés contenant des
-fichiers au formats *.efi*.
+fichiers au format *.efi*.
+
+La spécification UEFI spécifie que les exécutables portables (PE) de Microsoft sont le format d'exécutable standard dans les
+environnements EFI.
 
 #### Partitionnement de la mémoire
 
@@ -829,6 +833,22 @@ avec le processeur en mode supervision, principalement pour des questions de rap
 leurs services dans l'espace utilisateur, de la même manière que les processus utilisateurs, principalement pour des
 considérations de résilience et de modularité. Le noyau Linux est monolithique, bien qu'également modulaire, puisqu'il peut
 insérer et supprimer des module noyaux chargeable à l'exécution.
+
+#### Talon de démarrage UEFI et Image noyau unifiée
+
+Une image noyau unifiée (UKI) est un exécutable unique qui peut être démarré directement depuis le microgiciel UEFI, ou sourcé
+automatiquement par les chargeurs d'amorçage avec une configuration légère voire inexistante.
+
+Une image unifiée permet d'inclure :
+
+* un talon de démarrage UEFI tel que *systemd-stub*,
+* une image noyau,
+* une image initramfs,
+* l'interface ligne de commande du noyau,
+* optionnelement, un écran de démarrage.
+
+Grâce au talon, l'exécutable résultant, et par conséquent tous ses éléments, peuvent être facilement signés afin d'utiliser la
+fonctionnalité de démarrage sécurisé UEFI (Secure Boot).
 
 #### Cgroups
 
