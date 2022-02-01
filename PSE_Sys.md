@@ -66,6 +66,7 @@ légère pour deux sujets aussi larges.
         - [PAM](#pam)
         - [Auditd](#auditd)
     + [Virtualisation et conteneurisation](#virtualisation-et-conteneurisation)
+        - [Chroot](#chroot)
         - [Systemd-nspawn](#systemd-nspawn)
         - [Conteneurisation LXC](#conteneurisation-lxc)
         - [Conteneurisation Docker](#conteneurisation-docker)
@@ -1138,12 +1139,21 @@ informations concernant des évènements pouvant être pertinant (mais pas forc�
 
 L'audit Linux permet de sécuriser le système en fournissant les moyens d'analyser ce qui se passe de façon très détaillé.
 Néanmoins, il ne fournit pas de sécurité additionnelle en soit et ne protège pas le système de bogues ou de failles. Audit est
-en revanche utile pour repérer ce genre de problèmes et aider à prendre les mesures de sécurité additionnelles pour les
+en revanche utile pour repérer ce genre de problèmes et ainsi d'aider à prendre les mesures de sécurité additionnelles pour les
 prévenir.
 
 Le cadriciel d'audit fonctionne en écoutant les évènements rapportés par le noyau et en les notant dans un fichier de log.
 
+La commande *auditctl* permet de définir des règles permettant d'auditer les accès et les appels systèmes (ex. *chmod*). La
+recherche et la détection d'anomalies se fait via les commandes *ausearch* et *aureport*.
+
 ### Virtualisation et conteneurisation
+
+#### Chroot
+
+Chroot est une opération qui modifie le répertoire racine apparent pour le processus en cours d'exécution et pour ses enfants.
+Un programme qui s'exécute dans ce genre d'environnement modifié ne peut pas accéder les fichiers et les commandes en dehors de
+cet arbre de répertoire environnemental. Cet environnement modifié s'appelle une *prison chroot*.
 
 #### Systemd-nspawn
 
