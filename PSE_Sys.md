@@ -1071,9 +1071,12 @@ Les droits usuels s'organisent ainsi :
     - w autorise la création, renommage et suppression de fichier
     - x autorise à traverser (entrer) dans le répertoire.
 
-D'autres droits existent notamment le sticky bit principalement utilisé sur les répertoires et qui permet d'éviter la
-suppression du répertoire par d'autres utilisateurs bien qu'ils puissent avoir des droits en écriture sur le contenu de ce même
-répertoire.
+D'autres droits existent notamment :
+    - t le sticky bit principalement utilisé sur les répertoires et qui permet d'éviter la suppression du répertoire par
+      d'autres utilisateurs bien qu'ils puissent avoir des droits en écriture sur le contenu de ce même répertoire.
+    - s le setuid et setgid qui permettent d'exécuter un fichier avec les mêmes permissions que son propiétaire ou
+      respectivement son groupe. Setgid permet également de modifier le comportement d'un répertoire en fixant le groupe d'un
+      fichier à sa création.
 
 #### Listes de contrôle d'accès ACL
 
