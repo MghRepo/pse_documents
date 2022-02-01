@@ -64,6 +64,7 @@ légère pour deux sujets aussi larges.
         - [Listes de contrôle d'accès ACL](#listes-de-contrôle-daccès-ACL)
         - [SELinux](#seLinux)
         - [PAM](#pam)
+        - [Auditd](#auditd)
     + [Virtualisation et conteneurisation](#virtualisation-et-conteneurisation)
         - [Systemd-nspawn](#systemd-nspawn)
         - [Conteneurisation LXC](#conteneurisation-lxc)
@@ -1129,6 +1130,18 @@ Les modules d'authentification attachables linux (PAM) fournissent un quadriciel
 l'ensemble du système. Cela permet de développer des programmes indépendants du schéma d'authentification. Ces programmes ont
 besoin que des "modules d'authentification" leurs soient attachés à l'exécution pour fonctionner. Le module d'authentification
 attaché au programme est à la discrétion de l'administrateur système et dépend de l'installation locale.
+
+#### Auditd
+
+Le cadriciel d'audit Linux fournit un profil de protection d'accès contrôlés (CAPP) qui collecte de manière fiable des
+informations concernant des évènements pouvant être pertinant (mais pas forcément) pour la sécurité du système.
+
+L'audit Linux permet de sécuriser le système en fournissant les moyens d'analyser ce qui se passe de façon très détaillé.
+Néanmoins, il ne fournit pas de sécurité additionnelle en soit et ne protège pas le système de bogues ou de failles. Audit est
+en revanche utile pour repérer ce genre de problèmes et aider à prendre les mesures de sécurité additionnelles pour les
+prévenir.
+
+Le cadriciel d'audit fonctionne en écoutant les évènements rapportés par le noyau et en les notant dans un fichier de log.
 
 ### Virtualisation et conteneurisation
 
