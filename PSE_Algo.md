@@ -803,8 +803,7 @@ l'arbre privé de sa racine pour en faire un nouveau tas.
 
 Une table de hachage est une structure de données qui implémente un type abstrait de tableau associatif. Une table de hachage
 utilise une fonction de hachage afin de calculer l'index d'un tableau d'emplacements desquels la valeur attendue peut être
-trouvée. Pendant la recherche, la clef est hachée et le hash résultant indique l'emplacement de la valeur. Durant la recherche,
-la clef est hachée et le hash résultant indique où la valeur correspondante est stockée.
+trouvée. Pendant la recherche, la clef est hachée et le hash résultant indique l'emplacement de la valeur correspondante.
 
 Idéalement, la fonction de hachage assignera chaque clef à un réceptacle unique, mais la plupart des tables de hachage utilisent
 des fonctions de hachages imparfaites, qui peuvent causer des collisions quand la fonction de hachage attribue un même index
@@ -1170,7 +1169,7 @@ approche permet l'interopérabilité entre les systèmes informatiques sur l'Int
 alternative par exemple au protocole SOAP qui permet d'accéder à un service web.
 
 Des *ressources webs* étaient définis premièrement sur le web comme étant des documents ou des fichiers identifiés par leur
-URLs. Aujourd'hui, la définition est bien plus générique et abstraite, et inclue chaque chose, entité, ou action pouvant être
+URLs. Aujourd'hui, la définition est bien plus générique et abstraite, et inclut chaque chose, entité, ou action pouvant être
 identifiée, nommée, adressée, gérée ou exécutée, de quelque manière que ce soit sur le Web. Dans un service web RESTful, les
 requêtes effectuées à une URI de ressource obtiennent une réponse avec un chargement formaté en HTML, XML, JSON, ou quelque
 autre format. Par exemple, la réponse peut confirmer que l'état de la ressource a changé. La réponse peut également inclure des
