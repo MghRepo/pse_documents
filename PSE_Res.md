@@ -103,7 +103,7 @@ Les VLANs permettent :
 
 ### VPN
 
-Un réseau privé virtuel (*VPN*) étend un réseau privé à travers un réseau public et permet aux utilisateur d'envoyer et de
+Un réseau privé virtuel (*VPN*) étend un réseau privé à travers un réseau public et permet aux utilisateurs d'envoyer et de
 recevoir des données à travers des réseaux publics partagés comme si les ordinateurs étaient directement connectés au réseau
 privé. Les bénéfices d'un VPN incluent une plus grande fonctionnalité, sécurité, et améliore la gestion du réseau privé. Il
 fournit un accès à des ressources inaccessibles sur le réseau public et est généralement utilisé pour les télétravailleurs. Le
