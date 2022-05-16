@@ -341,14 +341,14 @@ nombreux protocoles réseau.
 
 #### Couche transport
 
-* **TCP** (*Transmission Control Protocol*) : est un des protocoles principals de la suite des protocoles internet. Il a été
+* **TCP** (*Transmission Control Protocol*) : est un des principaux protocoles de la suite des protocoles internet. Il a été
 développé à l'origine dans l'implémentation réseau initiale pour complémenter le protocole internet (IP). Par conséquent, la
-suite entière est communément connue sous le nom d'architecture TCP/IP. TCP fournit de flux d'octets vérifiés ordonnés et
+suite entière est communément connue sous le nom d'architecture TCP/IP. TCP fournit des flux d'octets vérifiés ordonnés et
 fiables entre applications s'exécutant sur des hôtes communiquant via un réseau IP. TCP est orienté connexion, et une connexion
 entre client et serveur est établie avant qu'une donnée puisse être envoyée. Le serveur doit écouter (ouverture passive) les
 requêtes de connexion des clients avant qu'une connexion soit établie. Un handshaking en trois temps (ouverture active), une
 retransmission, et une détection d'erreurs permet une grande fiabilité mais ajoute de la latence. Les applications qui ne
-requiert pas un service de flux de données fiable peuvent utiliser le protocole datagramme utilisateur (UDP), qui fournit un
+requièrent pas un service de flux de données fiable peuvent utiliser le protocole datagramme utilisateur (UDP), qui fournit un
 service datagramme sans connexion qui priorise le temps à la fiabilité. TCP permet d'éviter la congestion réseau. Néanmoins, le
 TCP est vulnérable aux attaques de déni de service, au piratage de connexion, attaque par veto TCP et redémarrage de la
 connexion.
